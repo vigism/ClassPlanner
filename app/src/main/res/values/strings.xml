@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">GPACalculator</string>
+    <string name="class_name">Class Name:</string>
+    <string name="class_grade">Grade: </string>
+    <string name="class_units">Units: </string>
+    <string name="new_class">New Class</string>
+    <string name="remove_button">Remove</string>
+    <string name="class_GPA">GPA:</string>
+    <string name="total_units">Units: </string>
+    <string name="overall_GPA">GPA: </string>
+
+    <string-array name="grades_array">
+        <item>A+</item>
+        <item>A</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B</item>
+        <item>B-</item>
+        <item>C+</item>
+        <item>C</item>
+        <item>C-</item>
+        <item>D</item>
+        <item>F</item>
+        <item>W</item>
+    </string-array>
+</resources>

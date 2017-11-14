@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:paddingTop="10dp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <!-- Class name edit text -->
+    <LinearLayout
+        android:id="@+id/classNameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/classNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:text="@string/class_name"
+            />
+        <EditText
+            android:id="@+id/classNameEditText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <!-- Units layout -->
+    <LinearLayout
+        android:id="@+id/classUnitsLayout"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/classNameLayout"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/classUnitsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/class_units"/>
+
+         <EditText
+             android:id="@+id/classUnitsEditText"
+             android:layout_width="45dp"
+             android:layout_height="wrap_content"
+             android:textSize="20dp"
+             android:inputType="number"
+             android:maxLength="3"
+             android:gravity="center"
+              />
+
+    </LinearLayout>
+
+    <!-- GPA layout -->
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/classUnitsLayout"
+        android:layout_below="@id/classNameLayout"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:id="@+id/classGPATextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/class_grade"/>
+
+        <Spinner
+            android:id="@+id/classGradeSpinner"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/removeClassButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/remove_button"
+        android:layout_alignParentEnd="true"
+        />
+
+    <!-- bottom border -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"/>
+
+    <!-- Right border -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:layout_alignParentStart="true"/>
+
+    <!-- left border -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
